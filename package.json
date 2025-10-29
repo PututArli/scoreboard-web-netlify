@@ -1,0 +1,7 @@
+{
+  "name": "netlify-scoreboard-server",
+  "version": "1.0.0",
+  "dependencies": {
+    "@netlify/kv-store": "^2.0.0"
+  }
+}

@@ -1,0 +1,11 @@
+[build]
+  # Direktori tempat index.html berada (root)
+  publish = "/"
+  # Direktori tempat Netlify Functions berada
+  functions = "netlify/functions"
+
+[[redirects]]
+  # Arahkan semua request /api/* ke function api.js
+  from = "/api/*"
+  to = "/.netlify/functions/api/:splat" # :splat menangkap sisa path
+  status = 200 # Gunakan 200 agar URL tidak berubah di browser
